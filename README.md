@@ -34,8 +34,54 @@ import MCPN
 # returns data on public internet in neighborhood
 Insert code here:
 
+mport pandas as pd
+import numpy as np
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+
+
+
+codes = pd.read_csv("Wifi-data.tsv", sep="\t")
+unique= codes['zip'].value_counts().rename_axis('Zip Codes').to_frame(name='Wifi Count')
+
+#data = unique.value_counts().rename_axis('Zip Codes').to_frame(name='Store Count')
+pd.set_option('display.max_rows',500)
+pd.set_option('display.max_columns',500)
+pd.set_option('display.width',1000)
+
+
+#print(data)
+
+unique.plot.bar()
+
+unique.head(90)
+
 # returns data on amount of convenience and grocery stores in neighborhood
 Insert code here:
+
+import pandas as pd
+import numpy as np
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+
+
+
+codes = pd.read_csv("Grocery-data.tsv", sep="\t")
+unique= codes['Zip'].value_counts().rename_axis('Zip Codes').to_frame(name='Store Count')
+
+#data = unique.value_counts().rename_axis('Zip Codes').to_frame(name='Store Count')
+pd.set_option('display.max_rows',500)
+pd.set_option('display.max_columns',500)
+pd.set_option('display.width',1000)
+
+
+#print(data)
+
+unique.plot.bar()
+
+unique.head(90)
 
 # returns data on average times for port authority buses
 Insert code here:

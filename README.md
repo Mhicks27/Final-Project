@@ -6,6 +6,10 @@ MCPN is a Python library for collecting data on the convenience of public intern
 
 Just Kidding
 
+# Group Number
+
+14
+
 # Team Members
 
 Madison Hickman- mrh176@pitt.edu
@@ -31,7 +35,7 @@ pip install MCPN
 ```python
 import MCPN
 
-# returns data on public internet in neighborhood
+# returns data on public internet in neighborhood analyzed by Madison
 Insert code here:
 
 mport pandas as pd
@@ -57,7 +61,7 @@ unique.plot.bar()
 
 unique.head(90)
 
-# returns data on amount of convenience and grocery stores in neighborhood
+# returns data on amount of convenience and grocery stores in neighborhood analyzed by Madison
 Insert code here:
 
 import pandas as pd
@@ -83,7 +87,7 @@ unique.plot.bar()
 
 unique.head(90)
 
-# returns data on average times for port authority buses
+# returns data on average times for port authority buses analyzed by Jenna
 Insert code here:
 ```
 

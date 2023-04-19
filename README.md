@@ -38,6 +38,12 @@ import MCPN
 # returns data on public internet in neighborhood analyzed by Madison
 Insert code here:
 
+import pandas as pd
+
+wifi = pd.read_csv("Wifi-data.tsv", sep='\t')
+
+wifi.head()
+
 mport pandas as pd
 import numpy as np
 %matplotlib inline
@@ -63,6 +69,12 @@ unique.head(90)
 
 # returns data on amount of convenience and grocery stores in neighborhood analyzed by Madison
 Insert code here:
+
+import pandas as pd
+
+stores = pd.read_csv("Grocery-data.tsv", sep='\t')
+
+stores.head()
 
 import pandas as pd
 import numpy as np
